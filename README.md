@@ -1,3 +1,9 @@
+## v0.5 Dynamic Atlantic synoptic visualisation
+
+The `atlantic.html` page replaces the dot-based Atlantic map with *interpolated* colour-shaded fields, calculated 4 hPa isobars, optional H/L centres, wind particles, a 7-day timeline, and selectable GFS/ECMWF. This uses 117 sampled coordinates fetched from Open-Meteo in batches of 20, NOT native high-resolution gridded model output. Requires online access and may be subject to rate limits; suitable for experimentation, not public-scale production. Read Open-Meteo terms and consider a caching backend for production. The controls label forecast values correctly.
+
+Upload `index.html`, `atlantic.html`, `README.md` (and optional `start.bat`) to the root of the GitHub repository; do not upload the ZIP itself.
+
 # Weather Intelligence — Prototype v0.1
 
 A browser-based UK weather analysis dashboard with actual API connections, four deterministic models, genuine ensemble-member uncertainty, RainViewer historical radar, and an experimental wind-flow visualization.
