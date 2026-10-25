@@ -44,3 +44,7 @@ Add a FastAPI/PostgreSQL service that caches forecasts, records model initializa
 - Hour-by-hour deterministic model spread, variable selector and selected-hour control. Close/Moderate/Wide are heuristic agreement bands, **not** forecast probability or validated accuracy.
 - Near-location actual rainfall gauges retrieved from the Environment Agency live telemetry API (England only). Gauge readings may be delayed and interval length varies.
 - No changes to original radar, maps or weather forecast endpoints.
+
+
+## v0.4 Atlantic Outlook
+Open `atlantic.html` or use the new link from the dashboard. ECMWF/GFS 250hPa wind, 500hPa heights, and MSLP sampled at 40 points across Atlantic; 7-day 6-hour timeline. Map values are point-sampled model forecasts, not full synoptic contours, and are not observations. External Open-Meteo APIs are used directly in browser.
