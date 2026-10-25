@@ -38,3 +38,9 @@ This prototype accesses Open-Meteo, RainViewer, OpenStreetMap/CARTO map tiles an
 ## Next steps
 
 Add a FastAPI/PostgreSQL service that caches forecasts, records model initialization times where available, stores past model runs and verification against actual rain gauges/stations; add API key/rate control; implement authenticated weather-station contributions and QC flags; wind field on proper gridded data; improved nowcasting; test with real devices on mobile.
+
+
+## v0.3 changes
+- Hour-by-hour deterministic model spread, variable selector and selected-hour control. Close/Moderate/Wide are heuristic agreement bands, **not** forecast probability or validated accuracy.
+- Near-location actual rainfall gauges retrieved from the Environment Agency live telemetry API (England only). Gauge readings may be delayed and interval length varies.
+- No changes to original radar, maps or weather forecast endpoints.
